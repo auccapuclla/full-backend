@@ -8,9 +8,9 @@ jobs:
       postgres:
         image: postgres:latest
         env:
-          POSTGRES_DB: root
+          POSTGRES_DB: simple_bank
           POSTGRES_PASSWORD: secret
-          POSTGRES_USER: simple_bank
+          POSTGRES_USER: root
         ports:
           - 5156:5432
         # Set health checks to wait until postgres has started
